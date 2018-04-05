@@ -8,10 +8,67 @@
     tools:context="com.example.ajabb.p5.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:textSize="16dp"
+        android:text="@string/welcome_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin"
+        android:textSize="16dp"
+        android:text="@string/registration_name" />
+    <EditText
+        android:id="@+id/registrationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin"
+        android:textSize="16dp"
+        android:text="@string/registration_device" />
+    <EditText
+        android:id="@+id/registrationDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Device" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin"
+        android:textSize="16dp"
+        android:text="@string/registration_message" />
+    <EditText
+        android:id="@+id/registrationMessage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Message" />
+
+        <Button
+            android:id="@+id/send_email"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="sendEmail"
+            android:text="Send Email" />
+    </LinearLayout>
+
 
 </android.support.v4.widget.NestedScrollView>
