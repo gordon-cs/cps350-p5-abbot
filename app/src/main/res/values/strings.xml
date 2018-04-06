@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Broadcast Beta</string>
     <string name="welcome_text">
-        "Welcome to Broadcast, an app to remotely post information to a second device.\n\n"
+        "\nWelcome to Broadcast, an app to remotely post information to a second device.\n\n"
         "This app is currently in development. Please register as a beta tester by filling out the below information. "
         "Feel free to email me at ajabbot@gmail.com with any questions or comments. Thank you!"
     </string>
@@ -24,4 +24,7 @@
         "Bugs are to be expected. Please submit bug reports to ajabbot@gmail.com.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_xkcd">xkcdActivity</string>
 </resources>
